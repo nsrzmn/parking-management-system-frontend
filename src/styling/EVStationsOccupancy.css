@@ -1,0 +1,13 @@
+.ev-slot {
+  width: 42px;
+  height: 58px;
+  text-align: center;
+  font-size: 0.75rem;
+  border-radius: 6px;
+}
+
+.ev-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}

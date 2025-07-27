@@ -1,0 +1,95 @@
+/* styling/sidebar.css */
+
+.sidebar {
+  position: relative;
+  width: 250px;
+  background-color: #f8f9fa !important;
+  color: #1d1f2b !important;
+  border-right: 1px solid #e0e0e0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Subtle background pattern */
+.sidebar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+/* Keep all content above background image */
+.sidebar * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header section */
+.header-card {
+  background-color: #0f0f0f;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.25rem;
+  color: #1d1f2b;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Nav links */
+.nav-link {
+  font-size: 0.95rem;
+  color: #1d1f2b !important;
+  background-color: transparent;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: #e9ecef;
+}
+
+/* Active state */
+.nav-link.active {
+  background-color: #d11c4b;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Optional icon/arrow inside links */
+.nav-link .arrow {
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
+
+/* User box at bottom */
+.user-box {
+  background-color: #0f0f0f;
+  color: #1d1f2b;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.user-avatar {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* General anchor tag override */
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+/* pages/LiveOverview.css */
+
+body {
+  background-color: #f5f6fa !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.live-overview-wrapper {
+  background-color: #f5f6fa;
+  min-height: 100vh;
+}
+
+.main-card {
+  background-color: #ffffff;
+}

@@ -1,0 +1,16 @@
+.parking-slot {
+  width: 36px;
+  height: 36px;
+  background-color: #f1f1f1;
+  transition: 0.2s ease-in-out;
+}
+
+.parking-slot.occupied {
+  background-color: #d11c4b;
+  color: white;
+}
+
+.parking-slot.available {
+  background-color: #e0e0e0;
+  color: #555;
+}
