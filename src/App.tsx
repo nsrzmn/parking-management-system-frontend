@@ -11,6 +11,7 @@ const App: React.FC = () => {
         <Sidebar />
         <main className="flex-grow-1 p-4">
           <Routes>
+            <Route path="/" element={<LiveOverview />} />
             <Route path="/live-overview" element={<LiveOverview />} />
             <Route path="/previous-analysis" element={<PreviousAnalysis />} />
             {/* Optional: Redirect root to /live-overview */}

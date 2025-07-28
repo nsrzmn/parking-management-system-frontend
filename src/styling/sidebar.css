@@ -1,7 +1,8 @@
 /* styling/sidebar.css */
 
 .sidebar {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 250px;
   background-color: #f8f9fa !important;
   color: #1d1f2b !important;
